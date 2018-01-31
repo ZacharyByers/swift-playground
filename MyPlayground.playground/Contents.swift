@@ -2,16 +2,10 @@
 
 import UIKit
 
-let name = "Zach"
+var array = [3.87, 7.1, 8.9]
+array.remove(at: 1)
+array.append(array[0] * array[1])
+print(array)
 
-let age = "25"
-
-print("My name is \(name) and I am \(age) years old")
-
-let dub = 5.76
-
-let inty = 8
-
-let product = Double(inty) * dub
-
-print("The product of \(dub) and \(inty) is \(product)")
+let dictionary = ["pizza": 10.99, "ice cream": 4.99, "salad": 7.99]
+print("The total cost of my meal is \(dictionary["pizza"]! + dictionary["salad"]!)")
